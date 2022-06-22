@@ -1,0 +1,35 @@
+.blog-prewiev {
+  &__wrapper {
+    border-top: 1px solid $black;
+    width: 100%;
+  }
+  &__title {
+    color: $black;
+    font-family: 'Neue Machina';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    max-width: 571px;
+    margin: 20px 57px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+  }
+  &__info {
+    margin-left: 57px;
+  }
+  &__text {
+    margin-left: 61px;
+    color: $black;
+    font-family: 'Formular';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 384px;
+  }
+  &__image {
+    margin-bottom: 5px;
+  }
+}

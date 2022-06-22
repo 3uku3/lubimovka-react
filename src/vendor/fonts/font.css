@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+	src: url('formular-light.eot?#iefix') format('embedded-opentype'),
+	     url('formular-light.woff2') format('woff2'),
+	     url('formular-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  src: url('ppneuemachina-regular.eot?#iefix') format('embedded-opentype'),
+       url('ppneuemachina-regular.woff2') format('woff2'),
+       url('ppneuemachina-regular.woff') format('woff');
+}

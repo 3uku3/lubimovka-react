@@ -1,0 +1,16 @@
+.short-list {
+  &__title {
+    color: $black;
+    font-family: 'Neue Machina';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 60px;
+    max-width: 682px;
+    margin-left: 57px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 57px;
+  }
+}
