@@ -1,0 +1,17 @@
+.affiche-festival {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+  &__left {
+    align-self: center;
+    justify-self: center;
+  }
+  &__info {
+    max-width: 325px;
+    margin-left: 40px;
+    @extend %font-Formular;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+  }
+}

@@ -1,7 +1,7 @@
 .short-list {
   &__title {
     color: $black;
-    font-family: 'Neue Machina';
+    @extend %font-Neue;
     font-size: 64px;
     font-weight: 400;
     line-height: 60px;
@@ -11,6 +11,6 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    margin: 0 57px;
+    margin: 0 57px 102px;
   }
 }

@@ -9,7 +9,7 @@
     min-height: 300px;
   }
   &__title {
-    font-family: "Neue Machina";
+    @extend %font-Neue;;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -25,7 +25,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $black;
-    font-family: "Formular";
+    @extend %font-Formular;;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -53,7 +53,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $black;
-    font-family: "Formular";
+    @extend %font-Formular;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -73,7 +73,7 @@
     }
   }
   &__author {
-    font-family: "Neue Machina";
+    @extend %font-Neue;;
     color: $black;
     font-size: 20px;
     font-weight: 400;
@@ -83,7 +83,7 @@
     margin: 17px 0 4px;
   }
   &__location {
-    font-family: "Formular";
+    @extend %font-Formular;;
     color: $black;
     font-size: 16px;
     font-weight: 300;

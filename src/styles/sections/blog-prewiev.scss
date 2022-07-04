@@ -5,7 +5,7 @@
   }
   &__title {
     color: $black;
-    font-family: 'Neue Machina';
+    @extend %font-Neue;
     font-weight: 400;
     font-size: 28px;
     line-height: 32px;
@@ -23,7 +23,7 @@
   &__text {
     margin-left: 61px;
     color: $black;
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-weight: 300;
     font-size: 20px;
     line-height: 28px;

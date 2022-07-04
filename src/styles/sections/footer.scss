@@ -17,7 +17,7 @@
     flex-direction: column;
   }
   &__columns-link {
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-size: 14px;
     line-height: 17px;
     color: $black;
@@ -41,7 +41,7 @@
     align-items: center;
   }
   &__caption-text {
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-size: 14px;
     line-height: 17px;
     color: $black;

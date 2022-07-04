@@ -1,13 +1,13 @@
 .affiche {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
   align-items: center;
   &__title {
-    font-family: "Neue Machina";
+    @extend %font-Neue;
     font-size: 64px;
-    font-weight: 400;
     line-height: 60px;
-    margin: 0 0 20px 580px;
+    margin: 50px 0 20px 0;
     display: flex;
   }
   &__title .link-arrow {
@@ -15,26 +15,22 @@
     margin-left: 20px;
   }
   &__subtitle {
-    font-family: "Formular";
+    @extend %font-Formular;
     font-size: 20px;
     line-height: 28px;
     color: $black;
     max-width: 432px;
-    margin: 0 0 109px 580px;
-  }
-  &__card-container {
-    display: flex;
-    margin-bottom: 114px;
+    margin: 0 0 109px 0;
   }
   &__left-container {
     margin-right: 20px;
-    flex: 1 0 500px;
+    margin-bottom: 114px;
   }
   &__right-container {
     display: flex;
     flex-direction: column;
     border-left: 1px solid $black;
     padding-left: 59px;
-    flex: 1 0 500px;
+    margin-bottom: 114px;
   }
 }

@@ -13,7 +13,7 @@
   }
   &__title {
     color: $black;
-    font-family: 'Neue Machina';
+    @extend %font-Neue;
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
@@ -32,7 +32,7 @@
   }
   &__text {
     color: $black;
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-size: 20px;
     font-weight: 300;
     line-height: 28px;
@@ -40,7 +40,7 @@
   }
   &__date {
     color: $black;
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;

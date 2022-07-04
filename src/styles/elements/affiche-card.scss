@@ -13,7 +13,7 @@
   }
   &__date {
     color: $black;
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-size: 20px;
     line-height: 28px;
     margin: 0 0 4px;
@@ -23,7 +23,7 @@
   }
   &__title {
     color: $black;
-    font-family: 'Neue Machina';
+    @extend %font-Neue;
     font-size: 36px;
     font-weight: 400;
     line-height: 38px;
@@ -32,7 +32,7 @@
   &__autors-list {
     list-style: none;
     color: $black;
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-size: 16px;
     line-height: 22px;
     margin: 0 0 20px;
@@ -40,7 +40,7 @@
   &__link {
     max-width: 150px;
     color: $black;
-    font-family: 'Formular';
+    @extend %font-Formular;
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;

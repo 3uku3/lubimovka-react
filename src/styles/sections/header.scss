@@ -40,7 +40,7 @@
 
     &-link {
       text-decoration: none;
-      font-family: "Formular";
+      @extend %font-Formular;
       font-size: 16px;
       line-height: 22px;
       margin: 0;
@@ -67,7 +67,7 @@
     &-link {
       text-decoration: none;
       color: $black;
-      font-family: "Formular";
+      @extend %font-Formular;
       font-size: 16px;
       line-height: 18px;
       margin: 0;
@@ -84,7 +84,7 @@
   &__donate-text {
     text-transform: uppercase;
     color: $black;
-    font-family: "Formular";
+    @extend %font-Formular;
     font-size: 14px;
     line-height: 17px;
   }

@@ -6,7 +6,7 @@
   text-decoration: none;
   color: $black;
   text-transform: uppercase;
-  font-family: "Formular";
+  @extend %font-Formular;
   font-size: 14px;
   line-height: 16px;
   margin: 0;

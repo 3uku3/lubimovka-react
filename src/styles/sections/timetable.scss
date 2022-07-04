@@ -1,0 +1,88 @@
+.timetable {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid $black;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__date {
+    @extend %font-Neue;
+    color: $black;
+    font-size: 64px;
+    line-height: 60px;
+    margin: 0;
+  }
+  &__month {
+    @extend %font-Formular;
+    color: $black;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+  &__register-text {
+    @extend %font-Formular;
+    &_type_open {
+      font-size: 18px;
+      line-height: 23px;
+      color: #fff;
+      margin: 0;
+      padding: 5px 26px;
+      background-color: $black;
+      display: inline-block;
+      margin-right: 60px;
+    }
+    &_type_close {
+      font-size: 16px;
+      line-height: 23px;
+      color: $black;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    border-bottom: 1px solid $black;
+    margin-right: 60px;
+    padding-left: 20px;
+    column-gap: 20px;
+  }
+  
+  &__content .link-arrow {
+    align-self: start;
+    margin: auto;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+  }
+  &__img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 50px;
+  }
+  &__time {
+    @extend %font-Neue;
+    color: $black;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  &__title {
+    @extend %font-Neue;
+    color: $black;
+    font-size: 28px;
+    line-height: 32px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    max-width: 400px;
+  }
+  &__text {
+    @extend %font-Formular;
+    color: $black;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

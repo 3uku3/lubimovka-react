@@ -3,17 +3,20 @@ import iconPlus from "../../assets/icons/plus.svg";
 import iconLeft from "../../assets/icons/elipse-left.svg";
 import iconRight from "../../assets/icons/elipse-right.svg";
 import { FC } from "react";
+import { Link, useNavigate } from "react-router-dom";
 const Header: FC = () => {
   return (
     <header className="header">
       <div className="header__container">
+        <Link to="/">
         <img className="logo" src={logo} alt="logo" />
+        </Link>
         <nav className="header__nav">
           <div className="header__nav-item">
             <img className="header__nav-left" src={iconLeft}></img>
-            <a className="header__nav-link" href="#">
+            <Link className="header__nav-link" to="/festival">
               Афиша
-            </a>
+            </Link>
             <img className="header__nav-right" src={iconRight}></img>
           </div>
           <div className="header__nav-item">
