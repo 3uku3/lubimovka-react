@@ -1,0 +1,11 @@
+.button-arrow {
+  border: 1px solid $black;
+    border-top: none;
+    @extend %font-Formular;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: none
+}

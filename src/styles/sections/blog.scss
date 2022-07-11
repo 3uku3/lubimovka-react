@@ -1,0 +1,100 @@
+.blog {
+  &__container {
+    display: flex;
+    margin: 70px 93px ;
+  }
+  &__left-container {
+    margin-top: 100px;
+    flex: 1 1 auto;
+  }
+  &__info{
+    max-width: 502px;
+    margin: 0 0 20px 30px;
+    @extend %font-Formular;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+    &:last-of-type {
+      max-width: 400px
+    }
+  }
+  &__info-link {
+    @extend %font-Formular;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+  }
+  &__right-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+  &__right-container .title{
+    max-width: 433px;
+  }
+  &__filters {
+    display: flex;
+    max-width: 450px;
+  }
+  &__month {
+    flex: 2 1 auto;
+    margin-right: 20px;
+  }
+  &__year {
+    flex: 1 1 auto;
+  }
+  &__cards {
+    display: flex;
+  }
+  &__wrapper {
+    margin-left: 90px;
+  }
+  &__left {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+  }
+  &__right {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    margin-right: 90px;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+  }
+  &__main &__title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  &__image {
+    object-fit: contain;
+    max-width: 270px;
+    max-height: 350px;
+    margin-bottom: 16px;
+  }
+  &__author {
+    @extend %font-Formular;
+    color: $black;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 9px;
+  }
+  &__title {
+    @extend %font-Neue;
+    color: $black;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 16px;
+  }
+  
+  &__text {
+    @extend %font-Formular;
+    color: $black;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 48px 30px;
+  }
+}

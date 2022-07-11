@@ -3,7 +3,7 @@ import iconPlus from "../../assets/icons/plus.svg";
 import iconLeft from "../../assets/icons/elipse-left.svg";
 import iconRight from "../../assets/icons/elipse-right.svg";
 import { FC } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Header: FC = () => {
   return (
     <header className="header">
@@ -12,20 +12,20 @@ const Header: FC = () => {
         <img className="logo" src={logo} alt="logo" />
         </Link>
         <nav className="header__nav">
-          <div className="header__nav-item">
+          <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/festival" >
             <img className="header__nav-left" src={iconLeft}></img>
-            <Link className="header__nav-link" to="/festival">
+            <p className={"header__nav-link"}>
               Афиша
-            </Link>
+            </p>
             <img className="header__nav-right" src={iconRight}></img>
-          </div>
-          <div className="header__nav-item">
+          </NavLink>
+          <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/library/plays" >
             <img className="header__nav-left" src={iconLeft}></img>
-            <a className="header__nav-link" href="#">
+            <p className="header__nav-link" >
               Библиотека
-            </a>
+              </p>
             <img className="header__nav-right" src={iconRight}></img>
-          </div>
+          </NavLink>
           <div className="header__nav-item">
             <img className="header__nav-left" src={iconLeft}></img>
             <a className="header__nav-link" href="#">
@@ -40,27 +40,27 @@ const Header: FC = () => {
             </a>
             <img className="header__nav-right" src={iconRight}></img>
           </div>
-          <div className="header__nav-item">
+          <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/blog" >
             <img className="header__nav-left" src={iconLeft}></img>
-            <a className="header__nav-link" href="#">
+            <p className="header__nav-link" >
               Блог
-            </a>
+              </p>
             <img className="header__nav-right" src={iconRight}></img>
-          </div>
-          <div className="header__nav-item">
+          </NavLink>
+          <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/news" >
             <img className="header__nav-left" src={iconLeft}></img>
-            <a className="header__nav-link" href="#">
+            <p className="header__nav-link" >
               Новости
-            </a>
+              </p>
             <img className="header__nav-right" src={iconRight}></img>
-          </div>
-          <div className="header__nav-item">
+          </NavLink>
+          <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/about/what-we-do" >
             <img className="header__nav-left" src={iconLeft}></img>
-            <a className="header__nav-link" href="#">
+            <p className="header__nav-link" >
               О фестивале
-            </a>
+              </p>
             <img className="header__nav-right" src={iconRight}></img>
-          </div>
+          </NavLink>
           <div className="header__nav-item">
             <img className="header__nav-left" src={iconLeft}></img>
             <a className="header__nav-link" href="#">

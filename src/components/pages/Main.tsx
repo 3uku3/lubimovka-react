@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import Affiche from "../sections/Affiche";
 import BannerArchive from "../sections/BannerArchive";
 import BlogPrewiev from "../sections/BlogPrewiev";
@@ -20,9 +20,11 @@ import storytelImg from "../../assets/images/storytel.png";
 import vanderlustImg from "../../assets/images/vanderlust.png";
 import teatronImg from "../../assets/images/teatron.png";
 import sovremennyiImg from "../../assets/images/sovremennyi.png";
+import ScrollToTop from "../elements/ScrollToTop";
 const Main: FC = () => {
   return (
     <main className="main">
+      <ScrollToTop></ScrollToTop>
       <div className="main__left">
         <Affiche></Affiche>
         <BlogPrewiev></BlogPrewiev>

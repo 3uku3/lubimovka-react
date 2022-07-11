@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  background-color: #ECEBE8;
+  background-color: #ecebe8;
   max-width: 1440px;
   width: 100%;
   z-index: 3;
@@ -16,8 +16,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 30px;
+    
     &-item {
       display: flex;
+      text-decoration: none;
     }
     &-right {
       visibility: hidden;
@@ -39,7 +41,6 @@
     }
 
     &-link {
-      text-decoration: none;
       @extend %font-Formular;
       font-size: 16px;
       line-height: 22px;
@@ -52,6 +53,14 @@
     opacity: 1;
   }
   &__nav-item:hover &__nav-left {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__nav-item_active &__nav-right {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__nav-item_active &__nav-left {
     visibility: visible;
     opacity: 1;
   }

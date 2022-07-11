@@ -1,0 +1,84 @@
+.filters {
+  max-width: 300px;
+  &__wrapper {
+    display: flex;
+    padding: 22px;
+    border-bottom: 1px solid $black;
+  }
+  &__link {
+    @extend %font-Neue;
+    font-size: 28px;
+    line-height: 32px;
+    color: $black;
+    opacity: 0.3;
+    text-decoration: none;
+  }
+  &__nav{
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+    &-right {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .3 linear;
+      &_active {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    &-left {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .3 linear;
+      &_active {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__nav-container:hover &__nav-right{
+    visibility: visible;
+    opacity: 1;
+  }
+  &__nav-container:hover &__nav-left{
+    visibility: visible;
+    opacity: 1;
+  }
+  &__years {
+    margin-left: 30px;
+  }
+  &__years-btn {
+    width: 100%;
+  }
+  &__text {
+    @extend %font-Neue;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__programm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  &__label {
+    @extend %font-Formular;
+    font-size: 18px;
+    line-height: 23px;
+    color: $black;
+    border: 1px solid $black;
+    border-top: none;
+    padding: 5px 8px;
+    width: fit-content;
+    margin-bottom: 20px;
+    cursor: pointer;
+    user-select: none; 
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__checkbox:checked + .filters__label {
+    background-color: $black;
+    color: #FFF;
+  }
+}

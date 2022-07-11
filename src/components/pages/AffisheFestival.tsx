@@ -1,12 +1,15 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import asteriskIcon from "../../assets/icons/asterisk.svg";
 import LinkWithArrow from "../elements/LinkWithArrow";
 import Title from "../elements/Title";
 import afficheImage from '../../assets/images/affiche-card-image.jpg'
+import ScrollToTop from "../elements/ScrollToTop";
 const AfficheFestival: FC = () => {
   return (
     <>
+    <ScrollToTop></ScrollToTop>
       <section className="affiche-festival">
+      
         <div className="affiche-festival__left">
           <img src={asteriskIcon}></img>
           <p className="affiche-festival__info">
