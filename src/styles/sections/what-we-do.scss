@@ -3,8 +3,8 @@
     padding-top: 90px;
     background-color: $accent;
     & .title {
-    max-width: 924px;
-    margin: 69px 62px 53px;
+      max-width: 924px;
+      margin: 69px 62px 53px;
     }
   }
   &__nav {
@@ -30,5 +30,46 @@
   }
   &__info {
     margin-top: 313px;
+    &-head {
+      display: flex;
+      margin: 0 180px 0 120px;
+      justify-content: space-between;
+    }
+    &-left {
+      max-width: 599px;
+    }
+    &-title {
+      @extend %font-Neue;
+      font-size: 56px;
+      line-height: 56px;
+      color: $black;
+      margin: 0 0 76px;
+    }
+    &-subtitle {
+      @extend %font-Neue;
+      font-size: 36px;
+      line-height: 38px;
+      color: $black;
+      margin: 0 0 24px
+    }
+    &-text {
+      @extend %font-Formular;
+      font-size: 20px;
+      line-height: 28px;
+      color: $black;
+    }
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 121px;
+      margin-top: 190px;
+    }
+    &-right {
+      max-width: 599px;
+    }
+    &-wrapper {
+      margin: 143px 0 169px 207px;
+      max-width: 599px;
+    }
   }
 }
