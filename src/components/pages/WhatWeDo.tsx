@@ -6,10 +6,28 @@ import Title from "../elements/Title";
 import imageHead from "../../assets/images/blog-prewiev-img.jpg";
 import image1 from "../../assets/images/what-we-do.jpg";
 import image2 from "../../assets/images/what-we-do1.jpg";
+import asteriskIcon from "../../assets/icons/asterisk.svg";
+import Partners from "../sections/Partners";
+import mosbrewImg from "../../assets/images/mosbrew.png";
+import prohorovImg from "../../assets/images/prohorov.png";
+import sbtgImg from "../../assets/images/sbtg.png";
+import pogovoritImg from "../../assets/images/pogovorit.png";
+import meduzaImg from "../../assets/images/meduza.png";
+import coltaImg from "../../assets/images/colta.png";
+import affichaImg from "../../assets/images/afficha.png";
+import teatrImg from "../../assets/images/teatr.png";
+import mayakImg from "../../assets/images/mayak.png";
+import radiokulturaImg from "../../assets/images/radio-kultura.png";
+import storytelImg from "../../assets/images/storytel.png";
+import vanderlustImg from "../../assets/images/vanderlust.png";
+import teatronImg from "../../assets/images/teatron.png";
+import sovremennyiImg from "../../assets/images/sovremennyi.png";
 
+import ScrollToTop from "../elements/ScrollToTop";
 const WhatWeDo: FC = () => {
   return (
     <main className="main-what-we-do">
+      <ScrollToTop></ScrollToTop>
       <div className="what-we-do">
         <section className="what-we-do__head">
           <nav className="what-we-do__nav">
@@ -223,7 +241,86 @@ const WhatWeDo: FC = () => {
               </div>
             </li>
           </ol>
+          <div className="selection__more">
+            <div className="selection__left-container">
+              <h2 className="selection__num">&</h2>
+              <h3 className="selection__subtitle">
+                Помимо открытого конкурса, на который свою пьесу может прислать
+                любой желающий
+              </h3>
+            </div>
+            <p className="selection__text">
+              Организаторы фестиваля каждый год собирают пул новых произведений
+              от состоявшихся драматургов и передают его куратору внеконкурсной
+              программы. Руководствуясь собственным вкусом, профессиональным
+              опытом и представлениями о тенденциях в современном театре и
+              драматургии, куратор выбирает 6 пьес из этого пула, которые также
+              представляются в рамках фестиваля.
+            </p>
+          </div>
         </section>
+        <section className="directors-competition">
+          <h2 className="directors-competition__title">
+            Конкурса для режиссеров читок на фестивале нет
+          </h2>
+          <div className="directors-competition__container">
+            <img src={asteriskIcon} alt="Звездочка" />
+            <p className="directors-competition__text">
+              Команда Любимовки самостоятельно привлекает режиссеров для работы.
+              Если вам хочется стать режиссером одной из читок,
+              <a className="directors-competition__link"> напишите нам </a>про
+              себя.
+            </p>
+          </div>
+        </section>
+        <Partners title="Партнёры фестиваля">
+          <div className="partners__item-container">
+            <img src={prohorovImg} alt="Фонд Михаила Прохорова"></img>
+            <p className="partners__caption">Генеральный партнёр</p>
+          </div>
+          <div className="partners__item-container">
+            <img src={mosbrewImg} alt="Mosbrew"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={sbtgImg} alt="SBTG"></img>
+            <p className="partners__caption">Онлайн-трансляции</p>
+          </div>
+          <div className="partners__item-container">
+            <img src={pogovoritImg} alt="А поговорить"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={meduzaImg} alt="Meduza"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={coltaImg} alt="Colta"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={affichaImg} alt="Афиша"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={teatrImg} alt="Театр"></img>
+          </div>
+        </Partners>
+        <Partners title="Информационные партнёры">
+          <div className="partners__item-container">
+            <img src={mayakImg} alt="Маяк"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={radiokulturaImg} alt="РАДИОКУЛЬТУРА"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={storytelImg} alt="storytel"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={vanderlustImg} alt="The VANDER Lust"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={teatronImg} alt="Театрон"></img>
+          </div>
+          <div className="partners__item-container">
+            <img src={sovremennyiImg} alt="Современный театр"></img>
+          </div>
+        </Partners>
       </div>
     </main>
   );

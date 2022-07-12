@@ -1,10 +1,11 @@
 import { FC } from "react";
 import Title from "../elements/Title";
 import iconDown from "../../assets/icons/arrow-down.svg";
-
+import ScrollToTop from "../elements/ScrollToTop";
 const News: FC = () => {
   return (
     <main className="main-news">
+      <ScrollToTop></ScrollToTop>
       <section className="news">
         <div className="news__container">
           <div className="news__left"></div>

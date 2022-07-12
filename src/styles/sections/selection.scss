@@ -22,7 +22,7 @@
     font-size: 72px;
     line-height: 70px;
     color: $black;
-    
+    margin: 0
   }
   &__subtitle {
     @extend %font-Neue;
@@ -48,5 +48,20 @@
     @extend %font-Neue;
     font-size: 20px;
     line-height: 24px;
+  }
+  &__more {
+    margin: 0 60px 45px;
+    background-color: $accent;
+    display: flex;
+    padding: 64px 120px;
+    justify-content: space-between;
+    & .selection__subtitle {
+      max-width: 467px;
+    }
+    & .selection__text {
+      max-width: 480px;
+      align-self: flex-end;
+      margin-top: 156px;
+    } 
   }
 }

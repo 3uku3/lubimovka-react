@@ -7,9 +7,11 @@ import blog2 from "../../assets/images/blog2.jpg";
 import blog3 from "../../assets/images/blog3.jpg";
 import blog4 from "../../assets/images/blog4.jpg";
 import blog5 from "../../assets/images/blog5.jpg";
+import ScrollToTop from "../elements/ScrollToTop";
 const Blog: FC = () => {
   return (
     <main className="main-blog">
+      <ScrollToTop></ScrollToTop>
       <section className="blog">
         <div className="blog__container">
           <div className="blog__left-container">
