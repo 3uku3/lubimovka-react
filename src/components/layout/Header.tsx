@@ -54,7 +54,7 @@ const Header: FC = () => {
               </p>
             <img className="header__nav-right" src={iconRight}></img>
           </NavLink>
-          <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/about/what-we-do" >
+          <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/about" >
             <img className="header__nav-left" src={iconLeft}></img>
             <p className="header__nav-link" >
               О фестивале

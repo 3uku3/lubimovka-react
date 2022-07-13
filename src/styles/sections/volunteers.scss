@@ -1,0 +1,64 @@
+.volunteers {
+  background-color: $accent;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  & .title {
+    align-self: flex-end;
+    margin: 125px 300px 40px;
+  }
+  &__years {
+    transform: translateX(55%);
+  }
+  &__list {
+    display: grid;
+    margin: 0 210px 70px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+    max-width: 180px;
+    & img {
+      width: 100%;
+    }
+  }
+  &__more {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 160px;
+    left: 20px;
+    border-radius: 50%;
+    border: none;
+    background-image: url("../../assets/icons/dots.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #ECEBE8;
+    cursor: pointer;
+  }
+  &__name {
+    @extend %font-Neue;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+  }
+  &__info {
+    margin: 0 210px;
+    &-text {
+      @extend %font-Formular;
+      font-size: 20px;
+      line-height: 28px;
+      color: $black;
+      max-width: 426px;
+      margin: 0 0 150px 30px;
+    }
+    &-link {
+      @extend %font-Formular;
+      font-size: 20px;
+      line-height: 28px;
+      color: $black;
+    }
+  }
+  
+}
