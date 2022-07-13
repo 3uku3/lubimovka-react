@@ -1,0 +1,62 @@
+.organizers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  & .title {
+    max-width: 544px;
+    align-self: flex-end;
+    margin-right: 176px;
+    margin-bottom: 80px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 180px 130px;
+    row-gap: 30px;
+    grid-auto-flow: row;
+  }
+  &__name {
+    @extend %font-Neue;
+    font-size: 28px;
+    line-height: 32px;
+    color: $black;
+    margin: 16px 0 8px
+  }
+  &__job {
+    @extend %font-Formular;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+    margin: 0 0 0 20px;
+  }
+  &__item {
+    max-width: 210px;
+    &_type_right-space {
+      grid-column: span 2;
+    }
+    &_type_left-space2 {
+      grid-column: 3/4;
+    }
+    &_type_left-space {
+      grid-column: 2/4;
+    }
+  }
+  &__team {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    & .title {
+    max-width: 544px;
+    align-self: flex-end;
+    margin-right: 176px;
+    margin-bottom: 80px;
+    }
+    &-list {
+      margin: 0 30px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 30px;
+      margin-bottom: 270px;
+    }
+  }
+}

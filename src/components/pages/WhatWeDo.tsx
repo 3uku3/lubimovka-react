@@ -37,7 +37,7 @@ const WhatWeDo: FC = () => {
                   ? "header__nav-item header__nav-item_active"
                   : "header__nav-item"
               }
-              to="/about-us/what-we-do"
+              to="/about/what-we-do"
             >
               <img className="header__nav-left" src={iconLeft}></img>
               <p className={"header__nav-link"}>Что мы делаем</p>
@@ -49,7 +49,7 @@ const WhatWeDo: FC = () => {
                   ? "header__nav-item header__nav-item_active"
                   : "header__nav-item"
               }
-              to="/about-us/what-we-do"
+              to="/about/team"
             >
               <img className="header__nav-left" src={iconLeft}></img>
               <p className={"header__nav-link"}>Организаторы</p>
@@ -61,7 +61,7 @@ const WhatWeDo: FC = () => {
                   ? "header__nav-item header__nav-item_active"
                   : "header__nav-item"
               }
-              to="/about-us/what-we-do"
+              to="/about/what-we-do"
             >
               <img className="header__nav-left" src={iconLeft}></img>
               <p className={"header__nav-link"}>Попечители</p>
@@ -73,7 +73,7 @@ const WhatWeDo: FC = () => {
                   ? "header__nav-item header__nav-item_active"
                   : "header__nav-item"
               }
-              to="/about-us/what-we-do"
+              to="/about/what-we-do"
             >
               <img className="header__nav-left" src={iconLeft}></img>
               <p className={"header__nav-link"}>Идеология</p>
