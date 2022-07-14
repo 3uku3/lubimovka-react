@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   margin-top: 90px;
+  &__nav {
+    max-width: 600px;
+    margin-left: 60px;
+  }
   & .title {
     max-width: 544px;
     align-self: flex-end;

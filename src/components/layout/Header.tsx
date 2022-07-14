@@ -4,6 +4,7 @@ import iconLeft from "../../assets/icons/elipse-left.svg";
 import iconRight from "../../assets/icons/elipse-right.svg";
 import { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Nav from "../elements/Nav";
 const Header: FC = () => {
   return (
     <header className="header">
@@ -11,7 +12,41 @@ const Header: FC = () => {
         <Link to="/">
         <img className="logo" src={logo} alt="logo" />
         </Link>
-        <nav className="header__nav">
+        <Nav className="header__nav" data={[
+          {
+            path: "/festival",
+            text: "Афиша"
+          },
+          {
+            path: "/library/plays",
+            text: "Библиотека"
+          },
+          {
+            path: "/library/plays",
+            text: "Проекты"
+          },
+          {
+            path: "/library/plays",
+            text: "История"
+          },
+          {
+            path: "/blog",
+            text: "Блог"
+          },
+          {
+            path: "/news",
+            text: "Новости"
+          },
+          {
+            path: "/about",
+            text: "О фестивале"
+          },
+          {
+            path: "/about",
+            text: "Контакты"
+          },
+        ]}></Nav>
+        {/* <nav className="header__nav">
           <NavLink className={({isActive}) => isActive ? "header__nav-item header__nav-item_active" : "header__nav-item"} to="/festival" >
             <img className="header__nav-left" src={iconLeft}></img>
             <p className={"header__nav-link"}>
@@ -68,7 +103,7 @@ const Header: FC = () => {
             </a>
             <img className="header__nav-right" src={iconRight}></img>
           </div>
-        </nav>
+        </nav> */}
         <ul className="header__social">
           <li className="header__social-item">
             <a className="header__social-link" href="#">

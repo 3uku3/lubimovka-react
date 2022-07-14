@@ -6,13 +6,24 @@ import iconDown from "../../assets/icons/arrow-down.svg";
 import Title from "../elements/Title";
 import ScrollToTop from "../elements/ScrollToTop";
 import Card from "../elements/Card";
+import Nav from "../elements/Nav";
 const Library: FC = () => {
   return (
     <main className="main-library" style={{ marginTop: "60px" }}>
       <ScrollToTop></ScrollToTop>
       <section className="filters">
         <div className="filters__wrapper">
-          <div className="filters__nav-container">
+          <Nav className="filters__nav" data={[
+            {
+              path: "/library/plays",
+              text: "Пьесы"
+            },
+            {
+              path: "/library/autors",
+              text: "Авторы"
+            },
+          ]}></Nav>
+          {/* <div className="filters__nav-container">
             <img className="filters__nav-left" src={iconLeft}></img>
             <Link className="filters__link" to="/library/plays">
               Пьесы
@@ -25,7 +36,7 @@ const Library: FC = () => {
               Авторы
             </Link>
             <img className="filters__nav-right" src={iconRight}></img>
-          </div>
+          </div> */}
         </div>
         <div className="filters__years">
           <p className="filters__text">Годы фестиваля</p>

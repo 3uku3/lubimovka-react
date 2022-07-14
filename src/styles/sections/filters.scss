@@ -2,45 +2,18 @@
   max-width: 300px;
   &__wrapper {
     display: flex;
-    padding: 22px;
+    padding: 22px 18px;
     border-bottom: 1px solid $black;
   }
-  &__link {
+  &__nav .nav__item_active .nav__text {
+    opacity: 1;
+  }
+  &__nav .nav__left {
+    width: 16px;
+  }
+  &__nav .nav__text{
     @include h6();
     opacity: 0.3;
-    text-decoration: none;
-  }
-  &__nav{
-    &-container {
-      display: flex;
-      align-items: center;
-    }
-    &-right {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity .3 linear;
-      &_active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-    &-left {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity .3 linear;
-      &_active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-  }
-  &__nav-container:hover &__nav-right{
-    visibility: visible;
-    opacity: 1;
-  }
-  &__nav-container:hover &__nav-left{
-    visibility: visible;
-    opacity: 1;
   }
   &__years {
     margin-left: 30px;
@@ -71,6 +44,6 @@
   }
   &__checkbox:checked + .filters__label {
     background-color: $black;
-    color: #FFF;
+    color: $white;
   }
 }

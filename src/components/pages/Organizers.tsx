@@ -8,60 +8,32 @@ import cheslav from "../../assets/images/cheslav.jpg";
 import sabina from "../../assets/images/sabina.jpg";
 import amaliya from "../../assets/images/amaliya.jpg";
 import asteriskIcon from "../../assets/icons/asterisk.svg";
+import Nav from "../elements/Nav";
 const Organizers: FC = () => {
   return (
     <main className="main-organizers">
       <section className="organizers">
-        <nav className="what-we-do__nav">
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/what-we-do"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Что мы делаем</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/team"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Организаторы</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/sponsors"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Попечители</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/what-we-do"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Идеология</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-        </nav>
+      <Nav
+          className="organizers__nav"
+          data={[
+            {
+              path: "/about/what-we-do",
+              text: "Что мы делаем",
+            },
+            {
+              path: "/about/team",
+              text: "Организаторы",
+            },
+            {
+              path: "/about/sponsors",
+              text: "Попечители",
+            },
+            {
+              path: "/about/ideology",
+              text: "Идеология",
+            },
+          ]}
+        ></Nav>
         <Title>Арт-дирекция фестиваля</Title>
         <div className="organizers__list">
           <article className="organizers__item">

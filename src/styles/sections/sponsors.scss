@@ -1,7 +1,8 @@
 .sponsors {
   margin-top: 90px;
   &__nav {
-    display: flex;
+    max-width: 600px;
+    margin-left: 60px;
   }
   &__cont {
     display: flex;

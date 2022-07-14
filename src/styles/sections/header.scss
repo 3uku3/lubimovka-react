@@ -13,52 +13,7 @@
   }
   &__nav {
     flex: 10 0 auto;
-    display: flex;
-    justify-content: space-between;
     margin: 0 30px;
-    &-item {
-      display: flex;
-      text-decoration: none;
-    }
-    &-right {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.3s linear;
-      &_active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-    &-left {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.3s linear;
-      &_active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-
-    &-link {
-      @include smallText();
-      margin: 0;
-    }
-  }
-  &__nav-item:hover &__nav-right {
-    visibility: visible;
-    opacity: 1;
-  }
-  &__nav-item:hover &__nav-left {
-    visibility: visible;
-    opacity: 1;
-  }
-  &__nav-item_active &__nav-right {
-    visibility: visible;
-    opacity: 1;
-  }
-  &__nav-item_active &__nav-left {
-    visibility: visible;
-    opacity: 1;
   }
   &__social {
     list-style: none;

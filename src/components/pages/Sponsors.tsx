@@ -9,60 +9,32 @@ import tereza from "../../assets/images/tereza.jpg";
 import cheslav from "../../assets/images/cheslav.jpg";
 import sabina from "../../assets/images/sabina.jpg";
 import amaliya from "../../assets/images/amaliya.jpg";
+import Nav from "../elements/Nav";
 const Sponsors: FC = () => {
   return (
     <main className="main-sponsors">
       <div className="sponsors">
-        <nav className="sponsors__nav">
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/what-we-do"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Что мы делаем</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/team"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Организаторы</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/sponsors"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Попечители</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header__nav-item header__nav-item_active"
-                : "header__nav-item"
-            }
-            to="/about/what-we-do"
-          >
-            <img className="header__nav-left" src={iconLeft}></img>
-            <p className={"header__nav-link"}>Идеология</p>
-            <img className="header__nav-right" src={iconRight}></img>
-          </NavLink>
-        </nav>
+        <Nav
+          className="sponsors__nav"
+          data={[
+            {
+              path: "/about/what-we-do",
+              text: "Что мы делаем",
+            },
+            {
+              path: "/about/team",
+              text: "Организаторы",
+            },
+            {
+              path: "/about/sponsors",
+              text: "Попечители",
+            },
+            {
+              path: "/about/ideology",
+              text: "Идеология",
+            },
+          ]}
+        ></Nav>
         <div className="sponsors__cont">
           <div className="sponsors__left">
             <img src={asteriskIcon} alt="Звездочка" />

@@ -24,62 +24,31 @@ import teatronImg from "../../assets/images/teatron.png";
 import sovremennyiImg from "../../assets/images/sovremennyi.png";
 
 import ScrollToTop from "../elements/ScrollToTop";
+import Nav from "../elements/Nav";
 const WhatWeDo: FC = () => {
   return (
     <main className="main-what-we-do">
       <ScrollToTop></ScrollToTop>
       <div className="what-we-do">
         <section className="what-we-do__head">
-          <nav className="what-we-do__nav">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "header__nav-item header__nav-item_active"
-                  : "header__nav-item"
-              }
-              to="/about/what-we-do"
-            >
-              <img className="header__nav-left" src={iconLeft}></img>
-              <p className={"header__nav-link"}>Что мы делаем</p>
-              <img className="header__nav-right" src={iconRight}></img>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "header__nav-item header__nav-item_active"
-                  : "header__nav-item"
-              }
-              to="/about/team"
-            >
-              <img className="header__nav-left" src={iconLeft}></img>
-              <p className={"header__nav-link"}>Организаторы</p>
-              <img className="header__nav-right" src={iconRight}></img>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "header__nav-item header__nav-item_active"
-                  : "header__nav-item"
-              }
-              to="/about/sponsors"
-            >
-              <img className="header__nav-left" src={iconLeft}></img>
-              <p className={"header__nav-link"}>Попечители</p>
-              <img className="header__nav-right" src={iconRight}></img>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "header__nav-item header__nav-item_active"
-                  : "header__nav-item"
-              }
-              to="/about/what-we-do"
-            >
-              <img className="header__nav-left" src={iconLeft}></img>
-              <p className={"header__nav-link"}>Идеология</p>
-              <img className="header__nav-right" src={iconRight}></img>
-            </NavLink>
-          </nav>
+          <Nav className="what-we-do__nav" data={[
+            {
+              path: "/about/what-we-do",
+              text: "Что мы делаем"
+            },
+            {
+              path: "/about/team",
+              text: "Организаторы"
+            },
+            {
+              path: "/about/sponsors",
+              text: "Попечители"
+            },
+            {
+              path: "/about/ideology",
+              text: "Идеология"
+            },
+          ]}></Nav>
           <Title>Фестиваль молодой драматургии Любимовка —</Title>
           <div className="what-we-do__wrapper">
             <img
