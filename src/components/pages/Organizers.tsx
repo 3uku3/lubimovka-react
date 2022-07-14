@@ -43,7 +43,7 @@ const Organizers: FC = () => {
                 ? "header__nav-item header__nav-item_active"
                 : "header__nav-item"
             }
-            to="/about/what-we-do"
+            to="/about/sponsors"
           >
             <img className="header__nav-left" src={iconLeft}></img>
             <p className={"header__nav-link"}>Попечители</p>
