@@ -6,17 +6,12 @@
   padding-top: 63px;
   overflow-y: scroll;
   transform: translateX(0px);
-  // position: absolute;
   transition: transform 0.5s linear;
   &__container {
     padding: 61px 56px;
   }
   &__title {
-    color: $black;
-    @extend %font-Neue;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
+    @include h4();
     margin: 16px 0;
   }
   &__title:first-of-type {
@@ -28,22 +23,13 @@
   }
   &__card .link-arrow {
     margin-left: 45px;
-    
   }
   &__text {
-    color: $black;
-    @extend %font-Formular;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px;
+    @include text();
     margin: 0 0 16px 45px;
   }
   &__date {
-    color: $black;
-    @extend %font-Formular;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
+    @include smallText();
     margin: 0;
   }
   

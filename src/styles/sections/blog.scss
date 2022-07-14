@@ -8,21 +8,15 @@
     flex: 1 1 auto;
   }
   &__info{
+    @include text();
     max-width: 502px;
     margin: 0 0 20px 30px;
-    @extend %font-Formular;
-    font-size: 20px;
-    line-height: 28px;
-    color: $black;
     &:last-of-type {
       max-width: 400px
     }
   }
   &__info-link {
-    @extend %font-Formular;
-    font-size: 20px;
-    line-height: 28px;
-    color: $black;
+    @include text();
   }
   &__right-container {
     display: flex;
@@ -76,25 +70,16 @@
     margin-bottom: 16px;
   }
   &__author {
-    @extend %font-Formular;
-    color: $black;
-    font-size: 16px;
-    line-height: 22px;
+    @include smallText();
     margin: 0 0 9px;
   }
   &__title {
-    @extend %font-Neue;
-    color: $black;
-    font-size: 28px;
-    line-height: 32px;
+    @include h6();
     margin: 0 0 16px;
   }
   
   &__text {
-    @extend %font-Formular;
-    color: $black;
-    font-size: 16px;
-    line-height: 22px;
+    @include smallText();
     margin: 0 0 48px 30px;
   }
 }

@@ -22,10 +22,7 @@
     opacity: 1;
   }
   &__link {
-    @extend %font-Neue;
-    font-size: 28px;
-    line-height: 32px;
-    color: $black;
+    @include h6();
   }
   &__left {
     visibility: hidden;

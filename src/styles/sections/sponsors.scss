@@ -12,18 +12,12 @@
     margin: 187px 0 0 123px;
   }
   &__info {
-    @extend %font-Formular;
-    font-size: 20px;
-    line-height: 28px;
-    color: $black;
+    @include text();
     max-width: 468px;
     margin-left: 25px;
   }
   &__link {
-    @extend %font-Formular;
-    font-size: 20px;
-    line-height: 28px;
-    color: $black;
+    @include text();
   }
   &__right {
     flex: 1 1 auto;
@@ -32,10 +26,7 @@
     }
   }
   &__text{
-    @extend %font-Neue;
-    font-size: 20px;
-    line-height: 24px;
-    color: $black;
+    @include h7();
     max-width: 420px;
     margin-left: 40px;
   }

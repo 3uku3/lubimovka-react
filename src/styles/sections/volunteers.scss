@@ -38,26 +38,17 @@
     cursor: pointer;
   }
   &__name {
-    @extend %font-Neue;
-    font-size: 20px;
-    line-height: 24px;
-    color: $black;
+    @include h7();
   }
   &__info {
     margin: 0 210px;
     &-text {
-      @extend %font-Formular;
-      font-size: 20px;
-      line-height: 28px;
-      color: $black;
+      @include text();
       max-width: 426px;
       margin: 0 0 150px 30px;
     }
     &-link {
-      @extend %font-Formular;
-      font-size: 20px;
-      line-height: 28px;
-      color: $black;
+      @include text();
     }
   }
   

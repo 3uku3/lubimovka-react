@@ -1,10 +1,6 @@
 .short-list {
   &__title {
-    color: $black;
-    @extend %font-Neue;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 60px;
+    @include h2();
     max-width: 682px;
     margin-left: 57px;
   }

@@ -1,20 +1,11 @@
 .partners {
-
   &__title {
-    @extend %font-Neue;
-    color: $black;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 32px;
+    @include h6();
     margin: 102px 60px 48px;
     max-width: 315px;
   }
   &__caption {
-    @extend %font-Formular;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    color: $black;
+    @include caption();
     margin: 21px 0 0;
   }
   &__items {

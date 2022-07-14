@@ -17,10 +17,7 @@
     flex-direction: column;
   }
   &__columns-link {
-    @extend %font-Formular;
-    font-size: 14px;
-    line-height: 17px;
-    color: $black;
+    @include caption();
     text-decoration: none;
     margin-bottom: 15px;
   }
@@ -41,10 +38,7 @@
     align-items: center;
   }
   &__caption-text {
-    @extend %font-Formular;
-    font-size: 14px;
-    line-height: 17px;
-    color: $black;
+    @include caption();
     margin: 0 32px 0 0;
     text-decoration: none;
   }

@@ -16,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     margin: 0 30px;
-    
     &-item {
       display: flex;
       text-decoration: none;
@@ -41,11 +40,8 @@
     }
 
     &-link {
-      @extend %font-Formular;
-      font-size: 16px;
-      line-height: 22px;
+      @include smallText();
       margin: 0;
-      color: $black;
     }
   }
   &__nav-item:hover &__nav-right {
@@ -74,11 +70,8 @@
     border-left: 1px solid $black;
     border-right: 1px solid $black;
     &-link {
+      @include smallText();
       text-decoration: none;
-      color: $black;
-      @extend %font-Formular;
-      font-size: 16px;
-      line-height: 18px;
       margin: 0;
     }
   }
@@ -92,9 +85,6 @@
   }
   &__donate-text {
     text-transform: uppercase;
-    color: $black;
-    @extend %font-Formular;
-    font-size: 14px;
-    line-height: 17px;
+    @include caption();
   }
 }

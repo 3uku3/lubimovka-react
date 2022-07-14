@@ -1,14 +1,10 @@
 .new-authors {
-  background-color: #FFF;
+  background-color: $white;
   display: flex;
   flex-direction: column;
-  
   &__title {
+    @include h5();
     align-self: flex-end;
-    @extend %font-Neue;
-    font-size: 36px;
-    line-height: 38px;
-    color: $black;
     margin: 85px 121px;
     max-width: 599px;
   }
@@ -23,9 +19,6 @@
     margin-bottom: 150px;
   }
   &__item {
-    @extend %font-Formular;
-    font-size: 20px;
-    line-height: 24px;
-    color: $black;
+    @include h7();
   }
 }

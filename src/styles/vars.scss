@@ -1,10 +1,68 @@
 $black : #242424;
 $accent: #B7C09D;
-%font-Neue {
+$white: #FFF;
+@mixin font-Neue {
   font-family: 'Neue Machina', sans-serif;
   font-weight: 400;
+  color: $black;
 }
-%font-Formular {
+@mixin font-Formular {
   font-family: 'Formular', sans-serif;
   font-weight: 300;
+  color: $black;
+}
+@mixin h1 {
+  @include font-Neue();
+  font-size: 72px;
+  line-height: 70px;
+}
+@mixin h2 {
+  @include font-Neue();
+  font-size: 64px;
+  line-height: 60px;
+}
+@mixin h3 {
+  @include font-Neue();
+  font-size: 56px;
+  line-height: 56px;
+}
+@mixin h4 {
+  @include font-Neue();
+  font-size: 40px;
+  line-height: 40px;
+}
+@mixin h5 {
+  @include font-Neue();
+  font-size: 36px;
+  line-height: 38px;
+}
+@mixin h6 {
+  @include font-Neue();
+  font-size: 28px;
+  line-height: 32px;
+}
+@mixin h7 {
+  @include font-Neue();
+  font-size: 20px;
+  line-height: 24px;
+}
+@mixin text {
+  @include font-Formular();
+  font-size: 20px;
+  line-height: 28px;
+}
+@mixin mediumText {
+  @include font-Formular();
+  font-size: 18px;
+  line-height: 23px;
+}
+@mixin smallText {
+  @include font-Formular();
+  font-size: 16px;
+  line-height: 22px;
+}
+@mixin caption {
+  @include font-Formular();
+  font-size: 14px;
+  line-height: 17px;
 }

@@ -16,18 +16,12 @@
     grid-auto-flow: row;
   }
   &__name {
-    @extend %font-Neue;
-    font-size: 28px;
-    line-height: 32px;
-    color: $black;
+    @include h6();
     margin: 16px 0 8px;
     max-width: 180px
   }
   &__job {
-    @extend %font-Formular;
-    font-size: 16px;
-    line-height: 22px;
-    color: $black;
+    @include smallText();
     margin: 0 0 0 20px;
   }
   &__item {

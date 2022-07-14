@@ -12,37 +12,24 @@
     flex-direction: column;
   }
   &__date {
-    color: $black;
-    @extend %font-Formular;
-    font-size: 20px;
-    line-height: 28px;
+    @include text();
     margin: 0 0 4px;
   }
   &__time {
     margin-left: 30px;
   }
   &__title {
-    color: $black;
-    @extend %font-Neue;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 38px;
+    @include h5();
     margin: 0 0 16px;
   }
   &__autors-list {
     list-style: none;
-    color: $black;
-    @extend %font-Formular;
-    font-size: 16px;
-    line-height: 22px;
+    @include smallText();
     margin: 0 0 20px;
   }
   &__link {
     max-width: 150px;
-    color: $black;
-    @extend %font-Formular;
-    font-size: 14px;
-    line-height: 17px;
+    @include caption();
     text-decoration: none;
     margin: 0 0 16px;
   }

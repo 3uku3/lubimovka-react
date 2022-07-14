@@ -7,25 +7,16 @@
     flex-direction: column;
   }
   &__title {
-    @extend %font-Neue;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 60px;
-    color: $black;
+    @include h2();
     max-width: 866px;
     margin: 68px 0 16px;
-    
   }
   &__title .link-arrow {
     position: relative;
     top: -45px;
   }
   &__subtitle {
-    @extend %font-Formular;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 35px;
-    color: $black;
+    @include text();
     margin: 0 59px 14px;
     max-width: 432px;
   }

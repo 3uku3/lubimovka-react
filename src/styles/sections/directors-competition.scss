@@ -1,10 +1,8 @@
 .directors-competition {
-  background-color: #FFF;
+  background-color: $white;
   display: flex;
   &__title {
-    @extend %font-Neue;
-    font-size: 36px;
-    line-height: 38px;
+    @include h5();
     margin: 72px 0 0 150px;
     max-width: 485px;
   }
@@ -13,9 +11,7 @@
     max-width: 611px;
   }
   &__text {
-    @extend %font-Formular;
-    font-size: 28px;
-    line-height: 32px;
+    @include h6();
     min-width: 611px;
     margin: 0 0 0 25px;
   }
