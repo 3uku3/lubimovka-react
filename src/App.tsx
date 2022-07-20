@@ -9,6 +9,7 @@ import Library from "./components/pages/Library";
 import Blog from "./components/pages/Blog";
 import News from "./components/pages/News";
 import About from "./components/pages/About";
+import Projects from './components/pages/Projects';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           element={<AfficheFestival></AfficheFestival>}
         ></Route>
         <Route path="/library/plays" element={<Library></Library>}></Route>
+        <Route path='/projects' element={<Projects></Projects>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/news" element={<News></News>}></Route>
         <Route path="/about*" element={<About></About>}></Route>
