@@ -11,6 +11,11 @@
     max-width: 600px;
     margin-left: 60px;
   }
+  &__title {
+    @include h2();
+    max-width: 924px;
+    margin: 67px 0 53px 62px;
+  }
   &__wrapper {
     display: flex;
   }
@@ -23,7 +28,7 @@
   }
   &__subtitle {
     @include h7();
-    margin-left: 91px;
+    margin: 0 0 20px 91px;
     max-width: 519px;
   }
   &__info {

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import Ideology from './Ideology';
 import Organizers from "./Organizers";
 import Sponsors from "./Sponsors";
 import WhatWeDo from "./WhatWeDo";
@@ -12,6 +13,7 @@ const About: FC = () => {
       <Route path="/what-we-do" element={<WhatWeDo></WhatWeDo>}></Route>
       <Route path="/team" element={<Organizers></Organizers>}></Route>
       <Route path="/sponsors" element={<Sponsors></Sponsors>}></Route>
+      <Route path='/ideology' element={<Ideology></Ideology>}></Route>
     </Routes>
   )
 }

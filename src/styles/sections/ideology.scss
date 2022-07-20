@@ -1,0 +1,54 @@
+.ideology {
+  &__nav {
+    margin-top: 90px;
+    max-width: 600px;
+    margin-left: 60px;
+  }
+  &__wrapper {
+    display: flex;
+    &_type_white {
+      background-color: $white;
+    }
+  }
+  &__image {
+    flex: 1 1 auto;
+    margin-top: 200px;
+    object-fit: cover;
+    max-height: 330px;
+  }
+  &__container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-top: 50px;
+  }
+  &__text-container {
+    margin-bottom: 51px;
+  }
+  &__num {
+    @include text();
+    margin: 0 0 16px 50px;
+    &_type_title {
+      margin: 0;
+      position: relative;
+      left: -10px;
+      top: 15px;
+    }
+  }
+  &__title {
+    @include h2();
+    margin: 0;
+    max-width: 448px;
+  }
+  &__subtitle {
+    @include h4();
+    margin: 0 0 16px 0;
+    max-width: 587px;
+  }
+  &__text {
+    @include text();
+    margin: 0 0 20px 50px;
+    max-width: 509px;
+  }
+}

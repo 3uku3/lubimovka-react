@@ -8,11 +8,11 @@ const Affiche: FC = () => {
     <section className="affiche">
       <div></div>
       <div>
-        <Title>
+        <Title className='affiche__title'>
           Афиша <br />
           событий <LinkWithArrow link="#" text="ПОЛНАЯ АФИША"></LinkWithArrow>
         </Title>
-        <p className="title__subtitle">На все читки и мастер-классы фестиваля вход свободный по предварительной регистрации.</p>
+        <p className="affiche__subtitle">На все читки и мастер-классы фестиваля вход свободный по предварительной регистрации.</p>
       </div>
       <div className="affiche__left-container">
         <AfficheCard></AfficheCard>

@@ -1,8 +1,4 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
-import iconLeft from "../../assets/icons/elipse-left.svg";
-import iconRight from "../../assets/icons/elipse-right.svg";
-import Title from "../elements/Title";
 import imageHead from "../../assets/images/blog-prewiev-img.jpg";
 import image1 from "../../assets/images/what-we-do.jpg";
 import image2 from "../../assets/images/what-we-do1.jpg";
@@ -49,7 +45,7 @@ const WhatWeDo: FC = () => {
               text: "Идеология"
             },
           ]}></Nav>
-          <Title>Фестиваль молодой драматургии Любимовка —</Title>
+          <h1 className="what-we-do__title">Фестиваль молодой драматургии Любимовка —</h1>
           <div className="what-we-do__wrapper">
             <img
               className="what-we-do__image"

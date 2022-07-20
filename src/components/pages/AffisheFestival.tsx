@@ -18,8 +18,8 @@ const AfficheFestival: FC = () => {
           </p>
         </div>
         <div className="affiche-festival__right">
-          <Title>Афиша фестиваля</Title>
-          <p className="title__subtitle">
+          <Title className='affiche-festival__title'>Афиша фестиваля</Title>
+          <p className="affiche-festival__subtitle">
             На все читки и мастер-классы фестиваля вход свободный по
             предварительной регистрации. <br></br>
             <br></br>

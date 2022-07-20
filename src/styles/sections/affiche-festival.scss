@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 60px;
+  &__subtitle {
+    @include text();
+    max-width: 432px;
+    margin: 0 0 109px 0;
+  }
   &__left {
     align-self: center;
     justify-self: center;

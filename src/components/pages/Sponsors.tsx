@@ -10,9 +10,11 @@ import cheslav from "../../assets/images/cheslav.jpg";
 import sabina from "../../assets/images/sabina.jpg";
 import amaliya from "../../assets/images/amaliya.jpg";
 import Nav from "../elements/Nav";
+import ScrollToTop from '../elements/ScrollToTop';
 const Sponsors: FC = () => {
   return (
     <main className="main-sponsors">
+      <ScrollToTop></ScrollToTop>
       <div className="sponsors">
         <Nav
           className="sponsors__nav"
@@ -53,90 +55,66 @@ const Sponsors: FC = () => {
             </p>
           </div>
         </div>
-        <div className="organizers__team-list">
-          <article className="organizers__item">
+        <div className="sponsors__team-list grid6">
+          <article className="grid6__item">
             <img src={tereza} alt="Тереза" />
-            <p className="organizers__name">Тереза Шимчак</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Тереза Шимчак</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item">
+          <article className="grid6__item">
             <img src={cheslav} alt="Чеслав" />
-            <p className="organizers__name">Чеслав Качмарек</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Чеслав Качмарек</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item organizers__item_type_right-space">
+          <article className="grid6__item grid6__item_type_right-space">
             <img src={sabina} alt="Сабина" />
-            <p className="organizers__name">Сабина Соха</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Сабина Соха</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item organizers__item_type_right-space">
+          <article className="grid6__item grid6__item_type_right-space">
             <img src={amaliya} alt="Амалия" />
-            <p className="organizers__name">Амалия Лукасик</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Амалия Лукасик</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item organizers__item_type_left-space">
+          <article className="grid6__item grid6__item_type_left-space">
             <img src={tereza} alt="Тереза" />
-            <p className="organizers__name">Тереза Шимчак</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Тереза Шимчак</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item ">
+          <article className="grid6__item ">
             <img src={cheslav} alt="Чеслав" />
-            <p className="organizers__name">Чеслав Качмарек</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Чеслав Качмарек</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item">
+          <article className="grid6__item">
             <img src={sabina} alt="Сабина" />
-            <p className="organizers__name">Сабина Соха</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Сабина Соха</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item">
+          <article className="grid6__item">
             <img src={amaliya} alt="Амалия" />
-            <p className="organizers__name">Амалия Лукасик</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Амалия Лукасик</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item">
+          <article className="grid6__item">
             <img src={tereza} alt="Тереза" />
-            <p className="organizers__name">Тереза Шимчак</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Тереза Шимчак</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item">
+          <article className="grid6__item">
             <img src={cheslav} alt="Чеслав" />
-            <p className="organizers__name">Чеслав Качмарек</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Чеслав Качмарек</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item organizers__item_type_right-space">
+          <article className="grid6__item grid6__item_type_right-space">
             <img src={sabina} alt="Сабина" />
-            <p className="organizers__name">Сабина Соха</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Сабина Соха</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
-          <article className="organizers__item">
+          <article className="grid6__item">
             <img src={amaliya} alt="Амалия" />
-            <p className="organizers__name">Амалия Лукасик</p>
-            <p className="organizers__job">
-              Драматург, сценарист, преподаватель
-            </p>
+            <p className="grid6__name">Амалия Лукасик</p>
+            <p className="grid6__job">Драматург, сценарист, преподаватель</p>
           </article>
         </div>
       </div>

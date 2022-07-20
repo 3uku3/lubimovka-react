@@ -6,7 +6,8 @@
     max-width: 600px;
     margin-left: 60px;
   }
-  & .title {
+  &__title {
+    @include h2();
     max-width: 544px;
     align-self: flex-end;
     margin-right: 176px;
@@ -44,18 +45,8 @@
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    & .title {
-    max-width: 544px;
-    align-self: flex-end;
-    margin-right: 176px;
-    margin-bottom: 80px;
-    }
     &-list {
-      margin: 0 30px;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      row-gap: 30px;
-      margin-bottom: 270px;
+      margin: 0 30px 270px;
     }
   }
 }

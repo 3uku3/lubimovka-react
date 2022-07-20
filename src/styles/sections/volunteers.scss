@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  & .title {
+  &__title {
+    @include h2();
     align-self: flex-end;
     margin: 125px 300px 40px;
   }
