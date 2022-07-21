@@ -24,7 +24,7 @@ const Header: FC = () => {
             text: "Проекты"
           },
           {
-            path: "/library/plays",
+            path: "/history",
             text: "История"
           },
           {

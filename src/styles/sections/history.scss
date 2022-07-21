@@ -1,0 +1,113 @@
+.history {
+  &__slider {
+    margin-top: 66px;
+    position: relative;
+  }
+  &__nav {
+    box-sizing: border-box;
+    position: fixed;
+    background-color: #ecebe8;
+    max-width: 1440px;
+    width: 100%;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: flex-end;
+    & .nav__text {
+      @include h6();
+    }
+    & .nav__right {
+      margin-right: 20px;
+    }
+  }
+  &__item {
+    display: flex;
+  }
+  &__img {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 50px;
+    padding-right: 60px;
+    max-height: 660px;
+  }
+  &__container {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &__title {
+    @include h4();
+    margin-bottom: 16px;
+  }
+  &__subtitle {
+    @include text();
+    margin-bottom: 80px;
+    max-width: 417px;
+  }
+  &__article {
+    max-width: 142px;
+  }
+  &__text {
+    @include smallText();
+  }
+  &__more {
+    display: flex;
+  }
+  &__link {
+    @include smallText();
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  &__arrow {
+    margin-left: 10px;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    &__container {
+      display: flex;
+      justify-content: center;
+      margin: 113px 0 0;
+    }
+    &__text-container {
+      max-width: 612px;
+      & .history-info__text {
+        margin-left: 50px;
+      }
+    }
+    &__img-title {
+      margin: 0 180px 50px;
+    }
+    &__title {
+      @include h1();
+      margin: 0 0 37px;
+      max-width: 612px;
+    }
+    &__subtitle {
+      @include h6();
+      margin: 0 180px 57px;
+      max-width: 869px
+    }
+    &__text {
+      @include text();
+      margin: 0 0 111px;
+      max-width: 719px;
+      align-self: center;
+    }
+    &__images {
+      margin-bottom: 57px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    &__img {
+      width: 47%;
+    }
+  }
+}

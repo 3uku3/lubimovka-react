@@ -2,18 +2,18 @@ import { FC } from "react";
 import { NavLink } from "react-router-dom";
 import iconLeft from "../../assets/icons/elipse-left.svg";
 import iconRight from "../../assets/icons/elipse-right.svg";
-interface dateType {
+interface dataType {
   path: string;
   text: string;
 }
 interface NavProps {
-  data: Array<dateType>;
+  data: Array<dataType>;
   className?: string
 }
 
 const Nav: FC<NavProps> = ({ data, className }) => {
   return (
-    <nav className={`nav ${className}`}>
+    <nav className={`nav ${className}`}>  
       {data.map((item) => {
         return (
           <NavLink
