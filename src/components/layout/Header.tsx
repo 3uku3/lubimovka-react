@@ -16,7 +16,7 @@ const Header: FC = () => {
             text: "Афиша"
           },
           {
-            path: "/library/plays",
+            path: "/library",
             text: "Библиотека"
           },
           {

@@ -1,0 +1,48 @@
+.authors {
+  width: 100%;
+  min-height: 80vh;
+  &__title {
+    @include h1();
+    text-align: right;
+    margin-right: 354px;
+  }
+  &__surch {
+    margin-left: 340px;
+    margin-bottom: 30px;
+  }
+  &__input {
+    @include mediumText();
+    border: none;
+    border-bottom: 1px solid $black;
+    background: none;
+    width: 40%;
+    padding: 10px;
+  }
+  &__button {
+    border-top: none;
+    border-right: none;
+  }
+  &__alphabet {
+    width: 100%;
+    border-bottom: 1px solid $black;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__letter {
+    @include h7();
+    border: none;
+    background: none;
+    padding: 4px 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+    &_active {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+}

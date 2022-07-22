@@ -21,7 +21,7 @@ function App() {
           path="/festival"
           element={<AfficheFestival></AfficheFestival>}
         ></Route>
-        <Route path="/library/plays" element={<Library></Library>}></Route>
+        <Route path="/library*" element={<Library></Library>}></Route>
         <Route path='/projects' element={<Projects></Projects>}></Route>
         <Route path='/history*' element={<History></History>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
