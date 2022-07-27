@@ -1,9 +1,12 @@
 .filters {
   max-width: 300px;
-  position: fixed;
   &__wrapper {
     display: flex;
     padding: 22px 18px;
+  }
+  &__sticky {
+    position: sticky;
+    top: 55px;
   }
   &__nav .nav__item_active .nav__text {
     opacity: 1;
@@ -11,7 +14,7 @@
   &__nav .nav__left {
     width: 16px;
   }
-  &__nav .nav__text{
+  &__nav .nav__text {
     @include h6();
     opacity: 0.3;
   }
@@ -23,6 +26,14 @@
   }
   &__years-btn {
     width: 100%;
+    cursor: pointer;
+    
+    & img {
+      transition: transform 0.5s ease-out;
+    }
+    &_active img{
+      transform: rotate(180deg);
+    }
   }
   &__text {
     @include h7();
@@ -32,6 +43,42 @@
     flex-direction: column;
     margin-left: 30px;
   }
+  &__years-container {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    transition: height 0.5s ease-out;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: $white;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $black;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+      background-color: #f9f9fd;
+  }
+    &_active {
+      height: 394px;
+      visibility: visible;
+    }
+  }
+
+  &__radio {
+    display: none;
+  }
+  &__radio-btn {
+    @include text();
+    text-align: left;
+    background: none;
+    border: 1px solid $black;
+    border-top: none;
+    padding: 10px;
+    cursor: pointer;
+  }
   &__label {
     @include mediumText();
     border: 1px solid $black;
@@ -40,7 +87,7 @@
     width: fit-content;
     margin-bottom: 20px;
     cursor: pointer;
-    user-select: none; 
+    user-select: none;
   }
   &__checkbox {
     display: none;

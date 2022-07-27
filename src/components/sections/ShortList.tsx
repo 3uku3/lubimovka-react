@@ -6,10 +6,10 @@ const ShortList: FC = () => {
     <section className="short-list">
       <h2 className="short-list__title">Шорт-лист 2020 года</h2>
       <div className="short-list__container">
+        {/* <Card></Card>
         <Card></Card>
         <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card></Card> */}
       </div>
     </section>
   );

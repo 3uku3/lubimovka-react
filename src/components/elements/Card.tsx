@@ -1,23 +1,30 @@
-import { FC } from "react";
-
-const Card: FC = () => {
+import { FC } from 'react';
+import type { cardInterface } from '../../store/cardReduser';
+const Card: FC<cardInterface> = ({
+  title,
+  link,
+  author,
+  location,
+  year,
+  ...props
+}) => {
   return (
-    <article className="card">
-      <div className="card__container">
-        <p className="card__title">С_училища</p>
-        <div className="card__button-container">
-          <a className="card__link" href="#">
+    <article className='card'>
+      <div className='card__container'>
+        <p className='card__title'>{title}</p>
+        <div className='card__button-container'>
+          <a className='card__link' href={`${link}`}>
             Смотреть читку
-            <div className="card__link-arrow"></div>
+            <div className='card__link-arrow'></div>
           </a>
-          <button className="card__button">
+          <button className='card__button'>
             Скачать пьесу
-            <div className="card__button-arrow"></div>
+            <div className='card__button-arrow'></div>
           </button>
         </div>
       </div>
-      <p className="card__author">Андрей Иванов</p>
-      <p className="card__location">Санкт-Петербург 2020</p>
+      <p className='card__author'>{author}</p>
+      <p className='card__location'>{`${location} ${year}`}</p>
     </article>
   );
 };

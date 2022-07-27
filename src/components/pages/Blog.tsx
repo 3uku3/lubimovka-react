@@ -55,7 +55,7 @@ const Blog: FC = () => {
               <div className="blog__column">
                 <article className="blog__item">
                   <img className="blog__image" src={blog2} alt="blog" />
-                  <p className="blog__autor">Лара Бессмертная</p>
+                  <p className="blog__author">Лара Бессмертная</p>
                   <h2 className="blog__title">
                     «Человек является источником жеста, смысла, правды»
                   </h2>
@@ -66,7 +66,7 @@ const Blog: FC = () => {
                 </article>
                 <article className="blog__item">
                   <img className="blog__image" src={blog3} alt="blog" />
-                  <p className="blog__autor">Лара Бессмертная</p>
+                  <p className="blog__author">Лара Бессмертная</p>
                   <h2 className="blog__title">
                     «Человек является источником жеста, смысла, правды»
                   </h2>
@@ -79,7 +79,7 @@ const Blog: FC = () => {
               <div className="blog__column">
                 <article className="blog__item">
                   <img className="blog__image" src={blog4} alt="blog" />
-                  <p className="blog__autor">Лара Бессмертная</p>
+                  <p className="blog__author">Лара Бессмертная</p>
                   <h2 className="blog__title">
                     «Человек является источником жеста, смысла, правды»
                   </h2>
@@ -90,7 +90,7 @@ const Blog: FC = () => {
                 </article>
                 <article className="blog__item">
                   <img className="blog__image" src={blog5} alt="blog" />
-                  <p className="blog__autor">Лара Бессмертная</p>
+                  <p className="blog__author">Лара Бессмертная</p>
                   <h2 className="blog__title">
                     «Человек является источником жеста, смысла, правды»
                   </h2>
@@ -101,7 +101,7 @@ const Blog: FC = () => {
                 </article>
                 <article className="blog__item">
                   <img className="blog__image" src={blog1} alt="blog" />
-                  <p className="blog__autor">Лара Бессмертная</p>
+                  <p className="blog__author">Лара Бессмертная</p>
                   <h2 className="blog__title">
                     «Человек является источником жеста, смысла, правды»
                   </h2>
@@ -117,7 +117,7 @@ const Blog: FC = () => {
             <div className="blog__column">
               <article className="blog__item">
                 <img className="blog__image" src={blog2} alt="blog" />
-                <p className="blog__autor">Лара Бессмертная</p>
+                <p className="blog__author">Лара Бессмертная</p>
                 <h2 className="blog__title">
                   «Человек является источником жеста, смысла, правды»
                 </h2>
@@ -128,7 +128,7 @@ const Blog: FC = () => {
               </article>
               <article className="blog__item">
                 <img className="blog__image" src={blog3} alt="blog" />
-                <p className="blog__autor">Лара Бессмертная</p>
+                <p className="blog__author">Лара Бессмертная</p>
                 <h2 className="blog__title">
                   «Человек является источником жеста, смысла, правды»
                 </h2>
@@ -139,7 +139,7 @@ const Blog: FC = () => {
               </article>
               <article className="blog__item">
                 <img className="blog__image" src={blog4} alt="blog" />
-                <p className="blog__autor">Лара Бессмертная</p>
+                <p className="blog__author">Лара Бессмертная</p>
                 <h2 className="blog__title">
                   «Человек является источником жеста, смысла, правды»
                 </h2>
@@ -152,7 +152,7 @@ const Blog: FC = () => {
             <div className="blog__column">
               <article className="blog__item">
                 <img className="blog__image" src={blog5} alt="blog" />
-                <p className="blog__autor">Лара Бессмертная</p>
+                <p className="blog__author">Лара Бессмертная</p>
                 <h2 className="blog__title">
                   «Человек является источником жеста, смысла, правды»
                 </h2>
@@ -163,7 +163,7 @@ const Blog: FC = () => {
               </article>
               <article className="blog__item">
                 <img className="blog__image" src={blog1} alt="blog" />
-                <p className="blog__autor">Лара Бессмертная</p>
+                <p className="blog__author">Лара Бессмертная</p>
                 <h2 className="blog__title">
                   «Человек является источником жеста, смысла, правды»
                 </h2>
@@ -174,7 +174,7 @@ const Blog: FC = () => {
               </article>
               <article className="blog__item">
                 <img className="blog__image" src={blog2} alt="blog" />
-                <p className="blog__autor">Лара Бессмертная</p>
+                <p className="blog__author">Лара Бессмертная</p>
                 <h2 className="blog__title">
                   «Человек является источником жеста, смысла, правды»
                 </h2>

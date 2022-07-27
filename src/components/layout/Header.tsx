@@ -40,7 +40,7 @@ const Header: FC = () => {
             text: "О фестивале"
           },
           {
-            path: "/about",
+            path: "/contacts",
             text: "Контакты"
           },
         ]}></Nav>

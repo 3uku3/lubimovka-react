@@ -1,11 +1,15 @@
 .library {
   display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 320px;
+  width: 100%;
+  &__play {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
   &__title {
     @include h1();
+    align-self: center;
+
   }
   &__surch {
     display: flex;
@@ -13,6 +17,7 @@
     position: sticky;
     top: 64px;
     background-color: #ecebe8;
+    flex-shrink: 0;
   }
   &__input {
     @include mediumText();
@@ -20,16 +25,21 @@
     background: none;
     border: 1px solid $black;
     border-top: none;
+    margin-left: 20px;
   }
   &__button {
     flex: 1 1 auto;
     text-align: left;
     border-top: none;
+    cursor: pointer;
   }
   &__container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    width: 100%;
+    min-height: 50vh;
+    margin-bottom: 100px;
   }
   &__container .card {
     max-width: 240px;
