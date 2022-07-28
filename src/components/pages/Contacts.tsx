@@ -1,12 +1,40 @@
-import React, { FC, HtmlHTMLAttributes, useRef, useState } from 'react';
+import React, { FC, useState } from 'react';
 import contactsImage from '../../assets/images/contacts.jpg';
 import arrowRight from '../../assets/icons/arrow-right.svg';
 import closeIcon from '../../assets/icons/close.svg';
 const Contacts: FC = () => {
   const [file, setFile] = useState<FileList>();
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [year, setYear] = useState('');
+  const [sity, setSity] = useState('');
   const [tel, setTel] = useState('');
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [yearWriting, setYearWriting] = useState('');
   const getNumbers = (str: String) => {
     return str.replace(/[^0-9]/g, '');
+  };
+  const handleFirstNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFirstName(e.target.value);
+  };
+  const handleLastNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setLastName(e.target.value);
+  };
+  const handleYearChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setYear(e.target.value);
+  };
+  const handleSityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSity(e.target.value);
+  };
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  };
+  const handleYearWritingChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setYearWriting(e.target.value);
   };
   const handleTelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const caretPos = e.target.selectionStart;
@@ -61,12 +89,16 @@ const Contacts: FC = () => {
       }
     }
   };
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     console.log(tel);
   };
   const handleFileChange = (e: any) => {
-    setFile(e.target.files);
+    if (e.target.files) {
+      setFile(e.target.files);
+      console.log(e.target.files);
+    }
+    console.log('hi');
   };
   const handleRemoveFileClick = () => {
     setFile(undefined);
@@ -81,21 +113,29 @@ const Contacts: FC = () => {
             <h2 className='contacts__subtitle'>О вас</h2>
             <fieldset className='contacts__fieldset'>
               <input
+                value={firstName}
+                onChange={handleFirstNameChange}
                 className='contacts__input'
                 type='text'
                 placeholder='Имя'
               />
               <input
+                value={lastName}
+                onChange={handleLastNameChange}
                 className='contacts__input'
                 type='text'
                 placeholder='Фамилия'
               />
               <input
+                value={year}
+                onChange={handleYearChange}
                 className='contacts__input'
                 type='text'
                 placeholder='Год рождения'
               />
               <input
+                value={sity}
+                onChange={handleSityChange}
                 className='contacts__input'
                 type='text'
                 placeholder='Город проживания'
@@ -109,6 +149,8 @@ const Contacts: FC = () => {
                 placeholder='Номер телефона'
               />
               <input
+                value={email}
+                onChange={handleEmailChange}
                 className='contacts__input'
                 type='email'
                 placeholder='E-mail'
@@ -117,11 +159,15 @@ const Contacts: FC = () => {
             <h2 className='contacts__subtitle'>О пьесе</h2>
             <fieldset className='contacts__fieldset'>
               <input
+                value={name}
+                onChange={handleNameChange}
                 className='contacts__input'
                 type='text'
                 placeholder='Название'
               />
               <input
+                value={yearWriting}
+                onChange={handleYearWritingChange}
                 className='contacts__input'
                 type='text'
                 placeholder='Год написания'
@@ -142,8 +188,7 @@ const Contacts: FC = () => {
                 {file === undefined ? '' : file[0].name}
               </p>
               <label className='contacts__input-label' htmlFor='input-file'>
-                {' '}
-                + ДОБАВИТЬ ФАЙЛ
+                + {file === undefined ? 'ДОБАВИТЬ ФАЙЛ' : 'ЗАМЕНИТЬ ФАЙЛ'}
               </label>
               <input
                 onChange={handleFileChange}
