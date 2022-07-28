@@ -1,15 +1,69 @@
-import React, { FC, useRef, useState } from 'react';
+import React, { FC, HtmlHTMLAttributes, useRef, useState } from 'react';
 import contactsImage from '../../assets/images/contacts.jpg';
 import arrowRight from '../../assets/icons/arrow-right.svg';
 import closeIcon from '../../assets/icons/close.svg';
 const Contacts: FC = () => {
   const [file, setFile] = useState<FileList>();
-  const telRef = useRef(null);
-  const handleTelChange = (e: React.ChangeEvent) => {
-    console.log(e.target);
-  }
+  const [tel, setTel] = useState('');
+  const getNumbers = (str: String) => {
+    return str.replace(/[^0-9]/g, '');
+  };
+  const handleTelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const caretPos = e.target.selectionStart;
+    const event = e.nativeEvent as InputEvent;
+    let result = '';
+    const value = e.target.value;
+    let numbers = getNumbers(value);
+    console.log(event.data);
+    if (value.length !== caretPos) {
+      if (event.data && /[^0-9]/g.test(event.data)) {
+        setTel(numbers);
+        return;
+      }
+      setTel(value);
+      return;
+    }
+    if (value.length === 1 && value === '+') {
+      setTel('+');
+      return;
+    }
+    const firtsNum = numbers.substring(0, 1);
+    if (firtsNum === '7') {
+      result = '+' + firtsNum;
+      if (numbers.length > 1) {
+        result += ' (' + numbers.substring(1, 4);
+      }
+      if (numbers.length > 4) {
+        result += ') ' + numbers.substring(4, 7);
+      }
+      if (numbers.length > 7) {
+        result += '-' + numbers.substring(7, 9);
+      }
+      if (numbers.length > 9) {
+        result += '-' + numbers.substring(9, 11);
+      }
+      if (numbers.length > 11) {
+        setTel('+' + getNumbers(value));
+        return;
+      }
+    } else {
+      result = '+' + numbers;
+    }
+    setTel(result);
+  };
+  const handleTelPaste = (e: React.ClipboardEvent) => {
+    const pasted = e.clipboardData;
+    if (pasted) {
+      const pastedText = pasted.getData('Text');
+      if (/[^0-9+()-\s]/g.test(pastedText)) {
+        e.preventDefault();
+        return;
+      }
+    }
+  };
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    console.log(tel);
   };
   const handleFileChange = (e: any) => {
     setFile(e.target.files);
@@ -47,10 +101,11 @@ const Contacts: FC = () => {
                 placeholder='Город проживания'
               />
               <input
-                ref={telRef}
+                value={tel}
                 onChange={handleTelChange}
+                onPaste={handleTelPaste}
                 className='contacts__input'
-                type='text'
+                type='tel'
                 placeholder='Номер телефона'
               />
               <input
