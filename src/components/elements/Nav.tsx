@@ -23,9 +23,9 @@ const Nav: FC<NavProps> = ({ data, className }) => {
             }
             to={item.path}
           >
-            <img className='nav__left' src={iconLeft}></img>
+            <img className='nav__left' src={iconLeft} alt='скобка'></img>
             <p className={'nav__text'}>{item.text}</p>
-            <img className='nav__right' src={iconRight}></img>
+            <img className='nav__right' src={iconRight} alt='скобка'></img>
           </NavLink>
         );
       })}

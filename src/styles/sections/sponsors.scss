@@ -23,10 +23,10 @@
   &__right {
     flex: 1 1 auto;
     & .title {
-      max-width: 544px
+      max-width: 544px;
     }
   }
-  &__text{
+  &__text {
     @include h7();
     max-width: 420px;
     margin-left: 40px;

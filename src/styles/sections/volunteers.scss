@@ -32,10 +32,10 @@
     left: 20px;
     border-radius: 50%;
     border: none;
-    background-image: url("../../assets/icons/dots.svg");
+    background-image: url('../../assets/icons/dots.svg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #ECEBE8;
+    background-color: #ecebe8;
     cursor: pointer;
   }
   &__name {
@@ -52,5 +52,4 @@
       @include text();
     }
   }
-  
 }

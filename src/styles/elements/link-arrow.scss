@@ -1,7 +1,7 @@
 .link-arrow {
   @include smallText();
   background: none;
-  background-image: url("../../assets/icons/arrow-right.svg");
+  background-image: url('../../assets/icons/arrow-right.svg');
   background-repeat: no-repeat;
   background-position: left center;
   padding: 10px 10px 10px 28px;

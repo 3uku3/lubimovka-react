@@ -128,7 +128,11 @@ const Ideology: FC = () => {
               </p>
             </div>
           </div>
-          <img className='ideology__image' src={imageIdeology} alt='Идеология' />
+          <img
+            className='ideology__image'
+            src={imageIdeology}
+            alt='Идеология'
+          />
         </div>
       </section>
     </main>

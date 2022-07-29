@@ -12,14 +12,14 @@ export interface cardInterface {
   fringe?: Boolean;
   longList?: Boolean;
   lark?: Boolean;
-} 
+}
 export const cardsSlice = createSlice({
   name: 'cards',
   initialState: cards,
   reducers: {
-    get: state => state
-  }
-})
+    get: (state) => state,
+  },
+});
 export const { get } = cardsSlice.actions;
 export const selectCards = (state: RootState) => state;
 export default cardsSlice.reducer;

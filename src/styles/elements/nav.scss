@@ -16,19 +16,19 @@
     transition: opacity 0.3s ease-out;
     height: 100%;
   }
-  &__item:hover &__left{
+  &__item:hover &__left {
     visibility: visible;
     opacity: 1;
   }
-  &__item:hover &__right{
+  &__item:hover &__right {
     visibility: visible;
     opacity: 1;
   }
-  &__item_active &__left{
+  &__item_active &__left {
     visibility: visible;
     opacity: 1;
   }
-  &__item_active &__right{
+  &__item_active &__right {
     visibility: visible;
     opacity: 1;
   }

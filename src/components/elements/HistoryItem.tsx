@@ -4,18 +4,18 @@ import arrowRight from '../../assets/icons/arrow-right.svg';
 
 interface HistoryItemProps {
   data: {
-    title: String,
-    subtitle: String,
-    competition: String,
-    selection: String,
-    selectors: String,
-    volunteers: String,
-    event: String,
-    sity: String,
+    title: String;
+    subtitle: String;
+    competition: String;
+    selection: String;
+    selectors: String;
+    volunteers: String;
+    event: String;
+    sity: String;
   };
 }
 
-const HistoryItem: FC<HistoryItemProps> = ({data}) => {
+const HistoryItem: FC<HistoryItemProps> = ({ data }) => {
   return (
     <div className='history__item'>
       <img className='history__img' src={historyImg} alt='История' />
@@ -56,26 +56,55 @@ const HistoryItem: FC<HistoryItemProps> = ({data}) => {
           <div className='history__container'>
             <h2 className='history__title'>Пьесы</h2>
             <a href='#' className='history__link'>
-              Шорт-лист <img className='history__arrow' src={arrowRight} alt='Стрелка вправо' />
+              Шорт-лист{' '}
+              <img
+                className='history__arrow'
+                src={arrowRight}
+                alt='Стрелка вправо'
+              />
             </a>
             <a href='#' className='history__link'>
-              Fringe-программа <img className='history__arrow' src={arrowRight} alt='Стрелка вправо' />
+              Fringe-программа{' '}
+              <img
+                className='history__arrow'
+                src={arrowRight}
+                alt='Стрелка вправо'
+              />
             </a>
             <a href='#' className='history__link'>
-              Особо отмеченные <img className='history__arrow' src={arrowRight} alt='Стрелка вправо' />
+              Особо отмеченные{' '}
+              <img
+                className='history__arrow'
+                src={arrowRight}
+                alt='Стрелка вправо'
+              />
             </a>
             <a href='#' className='history__link'>
               Внеконкурсная программа{' '}
-              <img className='history__arrow' src={arrowRight} alt='Стрелка вправо' />
+              <img
+                className='history__arrow'
+                src={arrowRight}
+                alt='Стрелка вправо'
+              />
             </a>
           </div>
           <div className='history__container'>
             <h2 className='history__title'>Дополнительно</h2>
             <a href='#' className='history__link'>
-              Записи в блоге <img className='history__arrow' src={arrowRight} alt='Стрелка вправо' />
+              Записи в блоге{' '}
+              <img
+                className='history__arrow'
+                src={arrowRight}
+                alt='Стрелка вправо'
+              />
             </a>
             <a href='#' className='history__link'>
-              Видео с фестиваля <img className='history__arrow' src={arrowRight} alt='Стрелка вправо' />
+              Видео с фестиваля{' '}
+              <img
+                className='history__arrow'
+                src={arrowRight}
+                alt='Стрелка вправо'
+              />
             </a>
           </div>
         </div>

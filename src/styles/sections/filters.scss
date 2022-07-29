@@ -27,11 +27,10 @@
   &__years-btn {
     width: 100%;
     cursor: pointer;
-    
     & img {
       transition: transform 0.5s ease-out;
     }
-    &_active img{
+    &_active img {
       transform: rotate(180deg);
     }
   }
@@ -60,7 +59,7 @@
     &::-webkit-scrollbar-track {
       box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
       background-color: #f9f9fd;
-  }
+    }
     &_active {
       height: 394px;
       visibility: visible;

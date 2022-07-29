@@ -93,7 +93,7 @@
     &__subtitle {
       @include h6();
       margin: 0 180px 57px;
-      max-width: 869px
+      max-width: 869px;
     }
     &__text {
       @include text();

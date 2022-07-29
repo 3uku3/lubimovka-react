@@ -97,7 +97,16 @@ const Authors: FC = () => {
       </form>
       <div onClick={onSubmitAlphabet} className='authors__alphabet'>
         {alphabet.map((item, index) => {
-          return (<button key={index} className={`authors__letter ${activeLetter === item ?'authors__letter_active': ''}`}>{item}</button>)
+          return (
+            <button
+              key={index}
+              className={`authors__letter ${
+                activeLetter === item ? 'authors__letter_active' : ''
+              }`}
+            >
+              {item}
+            </button>
+          );
         })}
       </div>
       <div className='authors__container'>

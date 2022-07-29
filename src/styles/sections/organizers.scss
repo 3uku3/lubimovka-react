@@ -23,7 +23,7 @@
   &__name {
     @include h6();
     margin: 16px 0 8px;
-    max-width: 180px
+    max-width: 180px;
   }
   &__job {
     @include smallText();
@@ -42,7 +42,7 @@
     }
   }
   &__team {
-    background-color: #FFF;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     &-list {

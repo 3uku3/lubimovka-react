@@ -47,7 +47,7 @@
     }
     &-subtitle {
       @include h5();
-      margin: 0 0 24px
+      margin: 0 0 24px;
     }
     &-text {
       @include text();

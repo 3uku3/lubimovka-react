@@ -1,20 +1,22 @@
-import { FC } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { FC } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Ideology from './Ideology';
-import Organizers from "./Organizers";
-import Sponsors from "./Sponsors";
-import WhatWeDo from "./WhatWeDo";
-
+import Organizers from './Organizers';
+import Sponsors from './Sponsors';
+import WhatWeDo from './WhatWeDo';
 
 const About: FC = () => {
   return (
     <Routes>
-      <Route path="" element={<Navigate replace to="what-we-do"></Navigate>}></Route>
-      <Route path="/what-we-do" element={<WhatWeDo></WhatWeDo>}></Route>
-      <Route path="/team" element={<Organizers></Organizers>}></Route>
-      <Route path="/sponsors" element={<Sponsors></Sponsors>}></Route>
+      <Route
+        path=''
+        element={<Navigate replace to='what-we-do'></Navigate>}
+      ></Route>
+      <Route path='/what-we-do' element={<WhatWeDo></WhatWeDo>}></Route>
+      <Route path='/team' element={<Organizers></Organizers>}></Route>
+      <Route path='/sponsors' element={<Sponsors></Sponsors>}></Route>
       <Route path='/ideology' element={<Ideology></Ideology>}></Route>
     </Routes>
-  )
-}
+  );
+};
 export default About;

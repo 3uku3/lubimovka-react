@@ -74,7 +74,11 @@ const History: FC = () => {
       </section>
       <section className='history-info'>
         <div className='history-info__container'>
-          <img className='history-info__img-title' src={historyImg} alt='История' />
+          <img
+            className='history-info__img-title'
+            src={historyImg}
+            alt='История'
+          />
           <div className='history-info__text-container'>
             <h1 className='history-info__title'>История фестиваля</h1>
             <p className='history-info__text'>
