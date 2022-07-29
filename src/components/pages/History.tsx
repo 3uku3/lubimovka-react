@@ -70,6 +70,132 @@ const History: FC = () => {
               ></HistoryItem>
             }
           ></Route>
+          <Route
+            path='/2019'
+            element={
+              <HistoryItem
+                data={{
+                  title: '5–12 сентября ',
+                  subtitle:
+                    'В Москве на площадке «8/3». Читки fringe-программы фестиваля впервые прошли в Центре Вознесенского.',
+                  competition: '756',
+                  selection: '140',
+                  selectors: '140',
+                  volunteers: '140',
+                  event: '6',
+                  sity: '14',
+                }}
+              ></HistoryItem>
+            }
+          ></Route>
+          <Route
+            path='/2018'
+            element={
+              <HistoryItem
+                data={{
+                  title: '5–12 сентября ',
+                  subtitle:
+                    'В Москве на площадке «8/3». Читки fringe-программы фестиваля впервые прошли в Центре Вознесенского.',
+                  competition: '710',
+                  selection: '140',
+                  selectors: '131',
+                  volunteers: '140',
+                  event: '6',
+                  sity: '14',
+                }}
+              ></HistoryItem>
+            }
+          ></Route>
+          <Route
+            path='/2017'
+            element={
+              <HistoryItem
+                data={{
+                  title: '5–12 сентября ',
+                  subtitle:
+                    'В Москве на площадке «8/3». Читки fringe-программы фестиваля впервые прошли в Центре Вознесенского.',
+                  competition: '502',
+                  selection: '140',
+                  selectors: '130',
+                  volunteers: '130',
+                  event: '6',
+                  sity: '14',
+                }}
+              ></HistoryItem>
+            }
+          ></Route>
+          <Route
+            path='/2016'
+            element={
+              <HistoryItem
+                data={{
+                  title: '5–12 сентября ',
+                  subtitle:
+                    'В Москве на площадке «8/3». Читки fringe-программы фестиваля впервые прошли в Центре Вознесенского.',
+                  competition: '756',
+                  selection: '140',
+                  selectors: '140',
+                  volunteers: '140',
+                  event: '6',
+                  sity: '14',
+                }}
+              ></HistoryItem>
+            }
+          ></Route>
+          <Route
+            path='/2015'
+            element={
+              <HistoryItem
+                data={{
+                  title: '5–12 сентября ',
+                  subtitle:
+                    'В Москве на площадке «8/3». Читки fringe-программы фестиваля впервые прошли в Центре Вознесенского.',
+                  competition: '756',
+                  selection: '140',
+                  selectors: '140',
+                  volunteers: '140',
+                  event: '6',
+                  sity: '14',
+                }}
+              ></HistoryItem>
+            }
+          ></Route>
+          <Route
+            path='/2014'
+            element={
+              <HistoryItem
+                data={{
+                  title: '5–12 сентября ',
+                  subtitle:
+                    'В Москве на площадке «8/3». Читки fringe-программы фестиваля впервые прошли в Центре Вознесенского.',
+                  competition: '756',
+                  selection: '140',
+                  selectors: '140',
+                  volunteers: '140',
+                  event: '6',
+                  sity: '14',
+                }}
+              ></HistoryItem>
+            }
+          ></Route>
+          <Route
+            path='/2013'
+            element={
+              <HistoryItem
+                data={{
+                  title: '5–12 сентября ',
+                  subtitle:
+                    'В Москве на площадке «8/3». Читки fringe-программы фестиваля впервые прошли в Центре Вознесенского.',
+                  competition: '756',
+                  selection: '140',
+                  selectors: '140',
+                  volunteers: '140',
+                  event: '6',
+                  sity: '14',
+                }}
+              ></HistoryItem>
+            }
+          ></Route>
         </Routes>
       </section>
       <section className='history-info'>
