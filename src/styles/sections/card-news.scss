@@ -7,6 +7,17 @@
   overflow-y: scroll;
   transform: translateX(0px);
   transition: transform 0.5s linear;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $black;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
   &__container {
     padding: 61px 56px;
   }
