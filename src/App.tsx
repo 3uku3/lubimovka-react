@@ -22,13 +22,13 @@ function App() {
           path="/festival"
           element={<AfficheFestival></AfficheFestival>}
         ></Route>
-        <Route path="/library*" element={<Library></Library>}></Route>
+        <Route path="/library/*" element={<Library></Library>}></Route>
         <Route path='/projects' element={<Projects></Projects>}></Route>
-        <Route path='/history*' element={<History></History>}></Route>
+        <Route path='/history/*' element={<History></History>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/news" element={<News></News>}></Route>
-        <Route path="/about*" element={<About></About>}></Route>
-        <Route path="/contacts*" element={<Contacts></Contacts>}></Route>
+        <Route path="/about/*" element={<About></About>}></Route>
+        <Route path="/contacts/*" element={<Contacts></Contacts>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
