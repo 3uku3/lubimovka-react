@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'normalize.css';
 import './index.scss';
 import App from './App';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store';
 const root = ReactDOM.createRoot(
@@ -12,9 +12,12 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter>
-        <App />
-      </HashRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Navigate to={'lubimovka-react'}></Navigate>}></Route>
+          <Route path='/lubimovka-react/*' element={<App />}></Route>
+        </Routes>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
 );

@@ -21,7 +21,7 @@ const Nav: FC<NavProps> = ({ data, className }) => {
             className={({ isActive }) =>
               `nav__item ${isActive && 'nav__item_active'}`
             }
-            to={item.path}
+            to={'/lubimovka-react' + item.path}
           >
             <img className='nav__left' src={iconLeft} alt='скобка'></img>
             <p className={'nav__text'}>{item.text}</p>
