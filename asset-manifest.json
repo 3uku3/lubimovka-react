@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lubimovka-react/static/css/main.48d4a12d.css",
-    "main.js": "/lubimovka-react/static/js/main.16bb0159.js",
+    "main.js": "/lubimovka-react/static/js/main.4d33d950.js",
     "static/media/history.png": "/lubimovka-react/static/media/history.5edb8bdef29fdef160e5.png",
     "static/media/contacts.jpg": "/lubimovka-react/static/media/contacts.7567e06e21b669b08f53.jpg",
     "static/media/what-we-do1.jpg": "/lubimovka-react/static/media/what-we-do1.8ea80b5564cea884efc0.jpg",
@@ -40,10 +40,10 @@
     "static/media/elipse-right.svg": "/lubimovka-react/static/media/elipse-right.18716961555ae9ffb6bd2684f4abd3e6.svg",
     "static/media/elipse-left.svg": "/lubimovka-react/static/media/elipse-left.f78c79623a5a768827376765d54c85b6.svg",
     "main.48d4a12d.css.map": "/lubimovka-react/static/css/main.48d4a12d.css.map",
-    "main.16bb0159.js.map": "/lubimovka-react/static/js/main.16bb0159.js.map"
+    "main.4d33d950.js.map": "/lubimovka-react/static/js/main.4d33d950.js.map"
   },
   "entrypoints": [
     "static/css/main.48d4a12d.css",
-    "static/js/main.16bb0159.js"
+    "static/js/main.4d33d950.js"
   ]
 }
