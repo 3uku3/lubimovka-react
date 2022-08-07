@@ -4,9 +4,11 @@ import HistoryItem from '../elements/HistoryItem';
 import Nav from '../elements/Nav';
 import historyImg from '../../assets/images/history1.jpg';
 import imageMore from '../../assets/images/lubimovka-more.jpg';
+import ScrollToTop from '../elements/ScrollToTop';
 const History: FC = () => {
   return (
     <main className='main-history'>
+      <ScrollToTop></ScrollToTop>
       <section className='history'>
         <div className='history__slider'>
           <Nav

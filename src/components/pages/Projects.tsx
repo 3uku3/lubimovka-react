@@ -1,9 +1,11 @@
 import { FC } from 'react';
 import imageMore from '../../assets/images/lubimovka-more.jpg';
+import ScrollToTop from '../elements/ScrollToTop';
 
 const Projects: FC = () => {
   return (
     <main className='main-projects'>
+      <ScrollToTop></ScrollToTop>
       <section className='projects'>
         <div className='projects__wrapper'>
           <div className='projects__left'></div>

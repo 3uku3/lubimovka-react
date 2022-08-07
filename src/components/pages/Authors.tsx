@@ -2,6 +2,7 @@ import { FC, useEffect, useRef, useState } from 'react';
 import { useAppSelector } from '../../hooks/hooks';
 import Nav from '../elements/Nav';
 import type { authorInterfase } from '../../data/authors';
+import ScrollToTop from '../elements/ScrollToTop';
 
 const Authors: FC = () => {
   const authors = useAppSelector((state) => state.authorReduser);
@@ -67,6 +68,7 @@ const Authors: FC = () => {
   };
   return (
     <section className='authors'>
+      <ScrollToTop></ScrollToTop>
       <div className='filters__sticky'>
         <div className='filters__wrapper'>
           <Nav

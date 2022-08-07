@@ -2,6 +2,7 @@ import React, { FC, useState } from 'react';
 import contactsImage from '../../assets/images/contacts.jpg';
 import arrowRight from '../../assets/icons/arrow-right.svg';
 import closeIcon from '../../assets/icons/close.svg';
+import ScrollToTop from '../elements/ScrollToTop';
 const Contacts: FC = () => {
   const [file, setFile] = useState<FileList>();
   const [firstName, setFirstName] = useState('');
@@ -105,6 +106,7 @@ const Contacts: FC = () => {
   };
   return (
     <main className='main-contacts'>
+      <ScrollToTop></ScrollToTop>
       <section className='contacts'>
         <img className='contacts__img' src={contactsImage} alt='Контакты' />
         <div className='contacts__wrapper'>

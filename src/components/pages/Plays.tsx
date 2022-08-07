@@ -3,6 +3,7 @@ import { useAppSelector } from '../../hooks/hooks';
 import Card from '../elements/Card';
 import Nav from '../elements/Nav';
 import iconDown from '../../assets/icons/arrow-down.svg';
+import ScrollToTop from '../elements/ScrollToTop';
 
 const Plays: FC = () => {
   const cards = useAppSelector((state) => state.cardReducer);
@@ -114,6 +115,7 @@ const Plays: FC = () => {
   }, [yearActiveValue, short, outCompetition, fringe, lark, longList]);
   return (
     <section className='library'>
+      <ScrollToTop></ScrollToTop>
       <div className='filters'>
         <div className='filters__sticky'>
           <div className='filters__wrapper'>
